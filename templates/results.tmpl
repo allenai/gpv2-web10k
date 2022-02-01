@@ -1,0 +1,23 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<h4>{{query}}</h4>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for img in images %}
+    <tr>
+    <td align="center"><img src="{{img.thumbnailUrl}}" width="300"/></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</body>
+</html>
+

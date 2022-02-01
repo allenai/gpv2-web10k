@@ -1,0 +1,25 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Query</th>
+      <th scope="col">imageType</th>
+      <th scope="col">Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for q in queries %}
+    <tr>
+    <td><a href="/html/{{q.query_id}}.html">{{q.query}}</a></td>
+    <td>{{q.imageType}}</td>
+    <td>{{q.count}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</body>
+</html>
