@@ -50,8 +50,8 @@ def get_api_key():
     # Put the secret ID of the API key here:
     response = client.get_secret_value(SecretId="secret_id")
 
-    # If you don't want to use S3, just return the API key
-    # as a string here:
+    # If you don't want to use S3 to store the API key, 
+    # just return the API key as a string here:
     return response["SecretString"]
 
 

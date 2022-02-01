@@ -8,8 +8,13 @@ To use this script, you will need a <a href="https://www.microsoft.com/en-us/bin
 ```
 python3 -mvenv venv
 source venv/bin/activate
-pip intall -r requirements.txt
+pip install -r requirements.txt
 ```
+
+## Adding the Bing Search API Key and Amazon S3 Bucket name
+Add your API key to `get_api_key()` in `tasks.py` on Line 45.
+
+Add the bucket name to `tasks.py` on Line 21. The images will be downloaded to this bucket.
 
 ## Running the script
 ```
