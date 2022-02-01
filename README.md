@@ -1,4 +1,4 @@
-# gpv1web-bing
+# gpv2-web10k
 
 This repository contains the script to download images from the <a href="https://prior.allenai.org/projects/gpv2">Web-10K dataset</a>.
 The script takes in a list of queries, queries Bing Image Search, and downloads the returned thumbnail images to an Amazon S3 bucket the user specifies.
@@ -12,9 +12,9 @@ pip install -r requirements.txt
 ```
 
 ## Adding the Bing Search API Key and Amazon S3 Bucket name
-Add your API key to `get_api_key()` in `tasks.py` on Line 45.
+Add your API key to `get_api_key()` in `tasks.py` on <a href="https://github.com/allenai/gpv2-web10k/blob/master/tasks.py#L45">Line 45</a>.
 
-Add the bucket name to `tasks.py` on Line 21. The images will be downloaded to this bucket.
+Add the bucket name to `tasks.py` on <a href="https://github.com/allenai/gpv2-web10k/blob/master/tasks.py#L21">Line 21</a>. The images will be downloaded to this bucket.
 
 ## Running the script
 ```
